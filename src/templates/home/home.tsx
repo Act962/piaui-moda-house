@@ -1,4 +1,10 @@
-import { AboutSection, HeroSection, ScheduleSection } from "./sections";
+import {
+  AboutSection,
+  HeroSection,
+  OtherSection,
+  PartnerSection,
+  ScheduleSection,
+} from "./sections";
 
 export function HomePage() {
   return (
@@ -6,6 +12,8 @@ export function HomePage() {
       <HeroSection />
       <AboutSection />
       <ScheduleSection />
+      <OtherSection />
+      <PartnerSection />
     </>
   );
 }
