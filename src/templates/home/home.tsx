@@ -1,10 +1,13 @@
 import {
   AboutSection,
+  FaqSection,
+  FormSection,
   HeroSection,
   OtherSection,
   PartnerSection,
   ScheduleSection,
 } from "./sections";
+import TimelineSection from "./sections/timeline-section/timeline-section";
 
 export function HomePage() {
   return (
@@ -14,6 +17,9 @@ export function HomePage() {
       <ScheduleSection />
       <OtherSection />
       <PartnerSection />
+      <TimelineSection />
+      <FaqSection />
+      <FormSection />
     </>
   );
 }

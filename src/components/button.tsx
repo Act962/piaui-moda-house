@@ -1,7 +1,7 @@
 import { tv, VariantProps } from "tailwind-variants";
 
 export const buttonVariants = tv({
-  base: "flex items-center justify-center cursor-pointer transition group gap-1 bg-black text-white",
+  base: "flex items-center justify-center cursor-pointer transition-colors group gap-1 bg-black text-white hover:bg-black/90",
   variants: {
     variant: {
       primary: " rounded-md",
@@ -30,7 +30,7 @@ export const buttonTextVariants = tv({
     },
     size: {
       sm: "text-sm",
-      md: "text-xs tracking-wider",
+      md: "text-xs tracking-widest",
     },
   },
   defaultVariants: {
@@ -47,6 +47,7 @@ export function Button({
   variant,
   size,
   disabled,
+  className,
   type = "button",
   children,
   ...rest
@@ -54,7 +55,7 @@ export function Button({
   return (
     <button
       type={type}
-      className={buttonVariants({ variant, size, disabled })}
+      className={buttonVariants({ variant, size, disabled, className })}
       {...rest}
     >
       <span className={buttonTextVariants({ variant, size })}>{children}</span>

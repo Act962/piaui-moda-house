@@ -42,6 +42,7 @@ export function Navbar() {
                 alt={socialMedia.alt}
                 width={18}
                 height={18}
+                className="cursor-pointer hover:opacity-85 transition-opacity"
               />
             ))}
           </div>
