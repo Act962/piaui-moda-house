@@ -1,11 +1,38 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Layout } from "@/components/layout";
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const acuminPro = localFont({
+  variable: "--font-acumin-sans",
+  src: [
+    {
+      path: "../font/Acumin-Pro-Light.otf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../font/Acumin-Pro-Medium.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../font/Acumin-Pro-Semibold.otf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../font/Acumin-Pro-Bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -20,7 +47,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} antialiased`}>
+      <body
+        className={`${acuminPro.variable} ${acuminPro.className} antialiased`}
+      >
         <Layout>{children}</Layout>
       </body>
     </html>

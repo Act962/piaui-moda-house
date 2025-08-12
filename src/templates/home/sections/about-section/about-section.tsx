@@ -1,10 +1,10 @@
 export function AboutSection() {
   return (
-    <section className="px-4 md:px-8 py-24 text-center">
+    <section className="px-4 md:px-8 py-18 text-center">
       <h2 className="font-medium tracking-widest text-xl uppercase">
         Autenticidade é fazer história
       </h2>
-      <p className="mt-16 w-full max-w-2xl text-justify mx-auto">
+      <p className="mt-16 w-full max-w-2xl  mx-auto font-light">
         O Piauí Moda House celebra em 2025 uma década de resistência criativa e
         protagonismo cultural. Consolidado como o maior evento de moda do
         estado, o PMH – 10 Anos traz como tema "Autenticidade é Fazer História",

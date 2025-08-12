@@ -44,7 +44,7 @@ export function FaqSection() {
 
         <ItemVertical items={reasons} />
 
-        <h2 className="font-medium tracking-widest text-xl uppercase mt-28">
+        <h2 className="font-medium tracking-widest text-xl uppercase">
           Impacto e legado
         </h2>
 

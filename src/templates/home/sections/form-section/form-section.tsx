@@ -31,7 +31,7 @@ export function FormSection() {
   }, []);
 
   return (
-    <section className="px-4 md:px-8 py-32 text-center">
+    <section className="px-4 md:px-8 pb-24 text-center">
       <h2 className="font-medium tracking-widest text-xl uppercase">
         Fique por dentro
       </h2>
