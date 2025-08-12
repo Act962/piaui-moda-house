@@ -3,7 +3,7 @@ import React from "react";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center">
+    <section className="relative h-[80vh] sm:min-h-screen sm:h-full flex items-center justify-center">
       <Image
         src="/hero.jpg"
         fill
