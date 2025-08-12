@@ -55,17 +55,19 @@ export function Navbar() {
           <Image
             src="/logo-pmh-branca.png"
             alt="Logo PM"
-            width={180}
-            height={180}
+            width={120}
+            height={120}
             className="object-contain"
           />
         </div>
 
         <div className="flex items-center gap-10">
-          <button className="uppercase">Seja um parceiro</button>
+          <button className="uppercase text-sm sm:text-base">
+            Seja um parceiro
+          </button>
 
           {/* Redes socias */}
-          <div className="flex gap-4">
+          <div className="hidden sm:flex gap-4">
             {socialMedias.map((socialMedia) => (
               <Image
                 key={socialMedia.alt}
