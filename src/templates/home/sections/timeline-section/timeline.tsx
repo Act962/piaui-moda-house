@@ -67,14 +67,14 @@ export function Timeline({ items, className, ...props }: TimeLineProps) {
 
       <div className="w-full flex justify-end gap-3 mt-8">
         <button
-          className="border px-4 py-1 rounded-lg transition-colors hover:bg-gray-100 cursor-pointer"
+          className="border px-4 py-1 rounded-lg transition-colors hover:bg-gray-100 cursor-pointer disabled:opacity-50"
           disabled={prevBtnDisabled}
           onClick={onPrevButtonClick}
         >
           <MoveLeft className="size-4" />
         </button>
         <button
-          className="border px-4 py-1 rounded-lg transition-colors hover:bg-gray-100 cursor-pointer"
+          className="border px-4 py-1 rounded-lg transition-colors hover:bg-gray-100 cursor-pointer disabled:opacity-50"
           disabled={nextBtnDisabled}
           onClick={onNextButtonClick}
         >

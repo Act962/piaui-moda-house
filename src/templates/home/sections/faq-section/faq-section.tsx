@@ -36,7 +36,7 @@ const legacy = [
 
 export function FaqSection() {
   return (
-    <section className="px-4 md:px-8 py-32 text-center">
+    <section className="px-4 md:px-8 lg:py-12 text-center">
       <div className="w-full max-w-6xl mx-auto space-y-12">
         <h2 className="font-medium tracking-widest text-xl uppercase">
           Por que participar
