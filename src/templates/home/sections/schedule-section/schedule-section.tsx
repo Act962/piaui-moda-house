@@ -27,7 +27,7 @@ export function ScheduleSection() {
       <h2 className="font-medium tracking-widest text-xl uppercase">
         PROGRAMAÇÃO
       </h2>
-      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-4 mt-16 mx-auto">
+      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10 mt-16 mx-auto">
         {schedules.map((schedule, index) => (
           <CardSchedule key={index} {...schedule} />
         ))}

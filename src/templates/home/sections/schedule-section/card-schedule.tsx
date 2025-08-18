@@ -16,7 +16,7 @@ export function CardSchedule({ date, description, location }: Props) {
           height={50}
           alt="Logo Branca"
         />
-        <span className="font-medium line-clamp-2 w-20 uppercase">{date}</span>
+        <span className="font-medium line-clamp-2 w-24 uppercase">{date}</span>
       </div>
 
       <p className="text-sm mt-6 w-full max-w-80">{description}</p>
