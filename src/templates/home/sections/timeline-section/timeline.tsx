@@ -40,7 +40,10 @@ export function Timeline({ items, className, ...props }: TimeLineProps) {
           {items.map((item, index) => (
             <li
               key={`item-date-${index}`}
-              className="w-full sm:max-w-2/3 md:max-w-1/3 text-start shrink-0"
+              className={cn(
+                "w-full sm:max-w-2/3 md:max-w-1/3 text-start shrink-0",
+                index === 0 && "ml-0 sm:ml-30"
+              )}
             >
               <time className="ml-4 font-semibold text-xl"> {item.date} </time>
 
@@ -65,7 +68,7 @@ export function Timeline({ items, className, ...props }: TimeLineProps) {
         </ol>
       </div>
 
-      <div className="w-full flex justify-end gap-3 mt-8">
+      <div className="w-full max-w-6xl mx-auto flex justify-end gap-3 mt-8">
         <button
           className="border px-4 py-1 rounded-lg transition-colors hover:bg-gray-100 cursor-pointer disabled:opacity-50"
           disabled={prevBtnDisabled}
