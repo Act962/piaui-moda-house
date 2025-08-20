@@ -61,6 +61,22 @@ export const metadata: Metadata = {
     icon: "/forma-branco.png",
     shortcut: "/forma-branco.png",
   },
+  keywords: ["Moda", "Piauí", "House", "Piauí Moda House"],
+  openGraph: {
+    title: "Piauí Moda House",
+    description:
+      "O Piauí Moda House celebra em 2025 uma década de resistência criativa e protagonismo cultural.",
+    url: "https://www.piauimodahouse.com/pmh-black.png",
+    siteName: "Piauí Moda House",
+    images: [
+      {
+        url: "https://www.piauimodahouse.com/pmh-black.png",
+        width: 800,
+        height: 600,
+        alt: "Piauí Moda House",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
