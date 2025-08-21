@@ -11,7 +11,7 @@ const schedules = [
     date: "30 de outubro",
     location: "Teresina - PI",
     description:
-      "Formação | Teresina Desfile de lançamento na capital com o melhor da moda regional.",
+      "Desfile de lançamento na capital com o melhor da moda regional.",
   },
   {
     date: "03 de novembro",

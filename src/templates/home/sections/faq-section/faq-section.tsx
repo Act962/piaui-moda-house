@@ -2,28 +2,27 @@ import { ItemHorizontal, ItemVertical } from "./item";
 
 const reasons = [
   {
-    title: "Para marcas e designers",
-    description:
-      "Conexão com novos públicos, presença em mercados estratégicos e valorização da moda local.",
-  },
-  {
     title: "Para Marcas e Designers",
     description:
       "Conexão com novos públicos, presença em mercados estratégicos e valorização da moda local.",
   },
   {
-    title: "Para Marcas e Designers",
+    title: "Para empresários, empreendedores e investidores",
     description:
-      "Conexão com novos públicos, presença em mercados estratégicos e valorização da moda local.",
+      "Alinhamento com os valores de inovação, diversidade e responsabilidade cultural.",
+  },
+  {
+    title: "Para os estudantes de moda",
+    description: "Acesso gratuito à cultura, à moda e a experiências únicas.",
   },
 ];
 
 const legacy = [
   {
-    description: "Geração de renda e visibilidade para criadores locais.",
+    description: "Geração de renda e visibilidade para criadores locais",
   },
   {
-    description: "Incentivo ao empreendedorismo e à inovação.",
+    description: "Incentivo ao empreendedorismo e à inovação",
   },
   {
     description:

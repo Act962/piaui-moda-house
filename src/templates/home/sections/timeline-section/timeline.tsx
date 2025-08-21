@@ -60,9 +60,18 @@ export function Timeline({ items, className, ...props }: TimeLineProps) {
                 className="object-cover ml-4 mt-4"
               />
 
-              <p className="mt-8 whitespace-pre-line w-60 md:70 text-sm md:text-base ml-4">
+              {/* <p className="mt-8 whitespace-pre-line w-60 md:70 text-sm md:text-base ml-4">
                 {item.description}
-              </p>
+              </p> */}
+              <p
+                className="mt-8 whitespace-pre-line w-60 md:w-70 text-sm md:text-base ml-4"
+                dangerouslySetInnerHTML={{
+                  __html: item.description.replace(
+                    /\*\*(.*?)\*\*/g,
+                    "<strong>$1</strong>"
+                  ),
+                }}
+              />
             </li>
           ))}
         </ol>
