@@ -45,7 +45,10 @@ export function Timeline({ items, className, ...props }: TimeLineProps) {
                 index === 0 && "ml-0 sm:ml-30"
               )}
             >
-              <time className="ml-4 font-semibold text-xl"> {item.date} </time>
+              <time className="ml-4 font-semibold text-xl select-none">
+                {" "}
+                {item.date}{" "}
+              </time>
 
               <div className="relative mt-2">
                 <Circle className="relative fill-black stroke-0 ml-4 size-4" />
@@ -64,7 +67,7 @@ export function Timeline({ items, className, ...props }: TimeLineProps) {
                 {item.description}
               </p> */}
               <p
-                className="mt-8 whitespace-pre-line w-60 md:w-70 text-sm md:text-base ml-4"
+                className="mt-8 whitespace-pre-line w-60 md:w-70 text-sm md:text-base ml-4 select-none"
                 dangerouslySetInnerHTML={{
                   __html: item.description.replace(
                     /\*\*(.*?)\*\*/g,
