@@ -14,6 +14,10 @@ export const partners = [
     logo: "/sebrae-moda.png",
     name: "Sebrae Moda",
   },
+  {
+    logo: "/fashionmeeting.png",
+    name: "Fashion Meeting",
+  },
 ];
 
 export function PartnerSection() {
