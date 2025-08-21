@@ -4,12 +4,12 @@ import Link from "next/link";
 const socialMedias = [
   {
     icon: "/icons/instagram-black.svg",
-    link: "",
+    link: "https://www.instagram.com/piauimodahouse/",
     alt: "Instagram",
   },
   {
     icon: "/icons/youtube-black.svg",
-    link: "",
+    link: "https://www.youtube.com/channel/UCPWqQT7eBVR-4-HP0cSx3rQ",
     alt: "Youtube",
   },
   {
@@ -19,7 +19,7 @@ const socialMedias = [
   },
   {
     icon: "/icons/whatsapp-black.svg",
-    link: "",
+    link: "https://wa.me/558694435307",
     alt: "Whatsapp",
   },
 ];
@@ -53,8 +53,10 @@ export function Footer() {
         {/* Redes socias */}
         <div className="flex gap-1.5">
           {socialMedias.map((socialMedia) => (
-            <span
+            <Link
+              href={socialMedia.link}
               key={socialMedia.alt}
+              target="_blank"
               className="cursor-pointer bg-white p-1 rounded-full transition-all  ease-in hover:opacity-80"
             >
               <Image
@@ -64,7 +66,7 @@ export function Footer() {
                 width={18}
                 height={18}
               />
-            </span>
+            </Link>
           ))}
         </div>
       </div>
