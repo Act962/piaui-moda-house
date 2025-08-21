@@ -49,6 +49,7 @@ export function FormSection() {
           type="text"
           placeholder="Seu nome"
           className="w-full bg-[#E3E3E3] px-6 py-3 rounded-md focus:outline-none"
+          autoComplete="off"
         />
 
         <input
@@ -56,6 +57,7 @@ export function FormSection() {
           type="email"
           placeholder="Seu e-mail"
           className="w-full bg-[#E3E3E3] px-6 py-3 rounded-md focus:outline-none"
+          autoComplete="off"
         />
 
         <Button type="submit" className="mx-auto" disabled={isSubmitting}>
