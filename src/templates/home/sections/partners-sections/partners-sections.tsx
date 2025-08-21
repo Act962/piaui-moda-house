@@ -1,5 +1,6 @@
 import { Button } from "@/components/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export const partners = [
   {
@@ -46,7 +47,11 @@ export function PartnerSection() {
           <h2 className=" tracking-widest text-sm">
             Associe sua marca à cultura, inovação e a moda que faz história
           </h2>
-          <Button variant="secondary">Seja um parceiro</Button>
+          <Button variant="secondary">
+            <Link href="https://wa.me/558694435307" target="_blank">
+              Seja um parceiro
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
