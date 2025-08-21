@@ -2,27 +2,28 @@
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const socialMedias = [
   {
     icon: "/icons/instagram.svg",
-    link: "",
+    link: "https://www.instagram.com/piauimodahouse/",
     alt: "Instagram",
   },
   {
     icon: "/icons/youtube.svg",
-    link: "",
+    link: "https://www.youtube.com/channel/UCPWqQT7eBVR-4-HP0cSx3rQ",
     alt: "Youtube",
   },
   {
     icon: "/icons/tiktok.svg",
-    link: "",
+    link: "/",
     alt: "Tiktok",
   },
   {
     icon: "/icons/whatsapp.svg",
-    link: "",
+    link: "https://wa.me/558694435307",
     alt: "Whatsapp",
   },
 ];
@@ -69,14 +70,19 @@ export function Navbar() {
           {/* Redes socias */}
           <div className="hidden sm:flex gap-4">
             {socialMedias.map((socialMedia) => (
-              <Image
+              <Link
+                href={socialMedia.link}
                 key={socialMedia.alt}
-                src={socialMedia.icon}
-                alt={socialMedia.alt}
-                width={18}
-                height={18}
-                className="cursor-pointer hover:opacity-85 transition-opacity"
-              />
+                target="_blank"
+              >
+                <Image
+                  src={socialMedia.icon}
+                  alt={socialMedia.alt}
+                  width={18}
+                  height={18}
+                  className="cursor-pointer hover:opacity-85 transition-opacity"
+                />
+              </Link>
             ))}
           </div>
         </div>

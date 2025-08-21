@@ -58,8 +58,8 @@ export const metadata: Metadata = {
   description:
     "O Piauí Moda House celebra em 2025 uma década de resistência criativa e protagonismo cultural.",
   icons: {
-    icon: "/forma-branco.png",
-    shortcut: "/forma-branco.png",
+    icon: "/pmh-black.png",
+    shortcut: "/pmh-black.png",
   },
   keywords: ["Moda", "Piauí", "House", "Piauí Moda House"],
   openGraph: {

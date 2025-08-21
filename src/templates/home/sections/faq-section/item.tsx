@@ -56,7 +56,9 @@ export function ItemHorizontal({ items }: Props) {
               height={50}
               alt="Logo Branca"
             />
-            <span className="text-sm font-light">{item.description}</span>
+            <span className="text-sm font-light text-center tracking-wider">
+              {item.description}
+            </span>
           </div>
           {index !== QUANTITY - 1 && <SeparatorHorizontal />}
         </React.Fragment>

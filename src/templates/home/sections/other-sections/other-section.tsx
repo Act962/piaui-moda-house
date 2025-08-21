@@ -7,7 +7,7 @@ export function OtherSection() {
         Outras edições
       </h2>
 
-      <div className="grid grid-cols-4 gap-3 mt-16 h-96">
+      <div className="grid grid-cols-4 gap-3 mt-16 h-96 lg:h-[28rem]">
         <div className="bg-gray-500 rounded-xl rounded-tl-none rounded-bl-none relative overflow-hidden">
           <Image
             src="/foto-1.png"
