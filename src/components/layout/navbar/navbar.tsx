@@ -63,9 +63,7 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-10">
-          <button className="uppercase text-sm sm:text-base">
-            Seja um parceiro
-          </button>
+          <button className="uppercase text-sm sm:text-base">Blog</button>
 
           {/* Redes socias */}
           <div className="hidden sm:flex gap-4">
