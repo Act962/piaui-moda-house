@@ -14,7 +14,7 @@ const socialMedias = [
   },
   {
     icon: "/icons/tiktok-black.svg",
-    link: "/https://www.tiktok.com/@piauimodahouse?_t=ZM-8z49IPaQJYj&_r=1",
+    link: "https://www.tiktok.com/@piauimodahouse?_t=ZM-8z49IPaQJYj&_r=1",
     alt: "Tiktok",
   },
   {
