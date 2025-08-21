@@ -1,6 +1,6 @@
 export function AboutSection() {
   return (
-    <section className="px-4 md:px-8 py-18 text-center">
+    <section className="px-6 py-18 text-center">
       <h2 className="font-medium tracking-widest text-xl uppercase">
         Autenticidade é fazer história
       </h2>
