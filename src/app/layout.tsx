@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Layout } from "@/components/layout";
+import { Toaster } from "sonner";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -89,6 +90,7 @@ export default function RootLayout({
       <body
         className={`${acuminPro.variable} ${acuminPro.className} antialiased`}
       >
+        <Toaster position="bottom-right" />
         <Layout>{children}</Layout>
       </body>
     </html>

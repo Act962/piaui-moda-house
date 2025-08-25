@@ -26,16 +26,12 @@ const socialMedias = [
 
 const links = [
   {
-    text: "Termos de Condições de Uso",
-    link: "",
-  },
-  {
     text: "Política de Privacidade",
-    link: "",
+    link: "/politica-de-privacidade",
   },
   {
     text: "Política de Cookies",
-    link: "",
+    link: "/politica-de-cookies",
   },
 ];
 
@@ -78,6 +74,7 @@ export function Footer() {
         <div className="flex flex-col gap-px text-end">
           {links.map((link, index) => (
             <Link
+              prefetch
               href={link.link}
               key={`politicas-${index}`}
               className="text-xs font-light cursor-pointer hover:underline"

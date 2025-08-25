@@ -27,7 +27,12 @@ const socialMedias = [
     alt: "Whatsapp",
   },
 ];
-export function Navbar() {
+
+type Props = {
+  ignore?: boolean;
+};
+
+export function Navbar({ ignore }: Props) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -48,7 +53,8 @@ export function Navbar() {
     <header
       className={cn(
         "fixed w-full top-0 z-50 text-white px-4 sm:px-8 py-6 items-center flex justify-between transition-all duration-300 ease-in-out",
-        isScrolled ? "bg-black shadow-md" : "bg-transparent"
+        isScrolled ? "bg-black shadow-md" : "bg-transparent",
+        ignore && "bg-black"
       )}
     >
       <nav className="flex justify-between items-center w-full max-w-6xl mx-auto">
