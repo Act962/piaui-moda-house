@@ -86,12 +86,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt">
       <body
         className={`${acuminPro.variable} ${acuminPro.className} antialiased`}
       >
         <Toaster position="bottom-right" />
-        <Layout>{children}</Layout>
+        {children}
       </body>
     </html>
   );
