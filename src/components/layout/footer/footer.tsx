@@ -39,13 +39,15 @@ export function Footer() {
   return (
     <footer className="bg-black text-white px-4 md:px-8 py-18">
       <div className="flex items-center justify-between">
-        <Image
-          src="/logo-pmh-branca.png"
-          alt="Logo PM"
-          width={180}
-          height={180}
-          className="object-contain"
-        />
+        <Link href="/">
+          <Image
+            src="/logo-pmh-branca.png"
+            alt="Logo PM"
+            width={180}
+            height={180}
+            className="object-contain"
+          />
+        </Link>
         {/* Redes socias */}
         <div className="flex gap-1.5">
           {socialMedias.map((socialMedia) => (

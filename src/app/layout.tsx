@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+
 import localFont from "next/font/local";
 import "./globals.css";
-import { Layout } from "@/components/layout";
-import { Toaster } from "sonner";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
+import { Toaster } from "sonner";
+import { CookieBanner } from "@/components/cookie-banner";
 
 const acuminPro = localFont({
   variable: "--font-acumin-sans",
@@ -88,10 +84,11 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <body
-        className={`${acuminPro.variable} ${acuminPro.className} antialiased`}
+        className={`${acuminPro.variable} ${acuminPro.className} antialiased relative`}
       >
         <Toaster position="bottom-right" />
         {children}
+        <CookieBanner />
       </body>
     </html>
   );

@@ -58,7 +58,7 @@ export function Navbar({ ignore }: Props) {
       )}
     >
       <nav className="flex justify-between items-center w-full max-w-6xl mx-auto">
-        <div>
+        <Link href="/">
           <Image
             src="/logo-pmh-branca.png"
             alt="Logo PM"
@@ -66,7 +66,7 @@ export function Navbar({ ignore }: Props) {
             height={120}
             className="object-contain"
           />
-        </div>
+        </Link>
 
         <div className="flex items-center gap-10">
           <button className="uppercase text-sm sm:text-base">Blog</button>
