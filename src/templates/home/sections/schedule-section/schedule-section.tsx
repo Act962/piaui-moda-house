@@ -2,22 +2,30 @@ import { CardSchedule } from "./card-schedule";
 
 const schedules = [
   {
+    date: "28 de outubro",
+    location: "São Paulo - SP",
+    description: "Evento Investe Piauí – Made in Piauí.",
+  },
+  {
     date: "29 de outubro",
     location: "São Paulo - SP",
-    description:
-      "PMH Mostra | Fashion Meeting Desfile de lançamento no coração da cidade que não dorme.",
+    description: "Desfile Fashion Meeting.",
   },
   {
     date: "30 de outubro",
-    location: "Teresina - PI",
+    location: "São Paulo - SP",
     description:
-      "Desfile de lançamento na capital com o melhor da moda regional.",
+      "Talk Show Fashion Meeting.\n\nPROGRAMAÇÃO\n•	Almoço de Networking – Negócios de Moda\n•	Desfiles\n•	Palestras com nomes nacionais\n•	Talk PMH – com Raquel Dias e grandes nomes da moda piauiense\n•	Encerramento com atração musical no Grande Hall",
   },
   {
-    date: "03 de novembro",
-    location: "Teresina - PI",
-    description:
-      "Imersão no universo da moda autoral para empreendedores e artistas locais.",
+    date: "01 de novembro",
+    location: "Piauí - PI",
+    description: "Desfile Conceito",
+  },
+  {
+    date: "02 de novembro",
+    location: "Piauí - PI",
+    description: "CCT Sebrae Moda + PMH Business",
   },
 ];
 

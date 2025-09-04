@@ -19,7 +19,9 @@ export function CardSchedule({ date, description, location }: Props) {
         <span className="font-medium line-clamp-2 w-24 uppercase">{date}</span>
       </div>
 
-      <p className="text-sm mt-6 w-full max-w-80">{description}</p>
+      <p className="text-sm mt-6 w-full max-w-80 whitespace-pre-line">
+        {description}
+      </p>
 
       <span className="mt-6 block text-sm text-start">{location}</span>
     </div>
