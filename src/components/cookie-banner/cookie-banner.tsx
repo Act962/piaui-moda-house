@@ -7,7 +7,6 @@ export function CookieBanner() {
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
-    // Verificar se o usuário já aceitou os cookies
     const consentData = localStorage.getItem("@phm-cookie");
 
     if (!consentData) {
