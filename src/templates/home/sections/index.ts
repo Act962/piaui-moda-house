@@ -6,3 +6,4 @@ export * from "./partners-sections";
 export * from "./timeline-section";
 export * from "./faq-section";
 export * from "./form-section";
+export * from "./blog-section";
