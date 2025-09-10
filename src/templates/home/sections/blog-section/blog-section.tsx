@@ -44,7 +44,7 @@ export async function BlogSection() {
                   className="bg-cover bg-center bg-no-repeat rounded-xl group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
-              <h4 className=" font-bold mt-2 line-clamp-3 opacity-85 group-hover:opacity-100">
+              <h4 className="font-bold mt-2 line-clamp-3 opacity-85 group-hover:opacity-100 text-start">
                 {post.title}
               </h4>
               <span className="text-sm mt-1">
