@@ -1,12 +1,39 @@
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import { BasicBlogPost } from "@/sanity/lib/interface";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata: Metadata = {
+  title: "Blog | Piauí Moda House",
+  description:
+    "O Piauí Moda House celebra em 2025 uma década de resistência criativa e protagonismo cultural.",
+  icons: {
+    icon: "/pmh-black.png",
+    shortcut: "/pmh-black.png",
+  },
+  keywords: ["Moda", "Piauí", "House", "Piauí Moda House", "Blog", "Notícias"],
+  openGraph: {
+    title: "Blog | Piauí Moda House",
+    description:
+      "O Piauí Moda House celebra em 2025 uma década de resistência criativa e protagonismo cultural.",
+    url: "https://www.piauimodahouse.com/pmh-black.png",
+    siteName: "Piauí Moda House",
+    images: [
+      {
+        url: "https://www.piauimodahouse.com/pmh-black.png",
+        width: 800,
+        height: 600,
+        alt: "Piauí Moda House",
+      },
+    ],
+  },
+};
+
 async function getData() {
   const query = `
-    *[_type == 'post'] | order(publishedAt desc)[0...6] {
+    *[_type == 'post'] | order(publishedAt desc) {
   title,
   "currentSlug": slug.current,
   mainImage,

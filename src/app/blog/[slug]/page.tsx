@@ -5,6 +5,7 @@ import { PortableText } from "next-sanity";
 import { getImageDimensions } from "@sanity/asset-utils";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
 
 async function getData(slug: string) {
   const query = `
@@ -25,6 +26,33 @@ type BlogPostPageProps = {
     slug: string;
   }>;
 };
+
+export async function generateMetadata({
+  params,
+}: BlogPostPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const data: BasicBlogPost = await getData(slug);
+
+  if (!data) {
+    return {};
+  }
+
+  return {
+    title: data.title,
+    description: data.smallDescription,
+    robots: "index, follow",
+    openGraph: {
+      images: [
+        {
+          url: urlFor(data.mainImage).url(),
+          alt: data.title,
+          width: 800,
+          height: 600,
+        },
+      ],
+    },
+  };
+}
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params;
