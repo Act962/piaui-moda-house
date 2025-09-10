@@ -28,6 +28,8 @@ export async function POST(req: NextRequest) {
       return new Response(JSON.stringify({ message, body }), { status: 400 });
     }
 
+    revalidatePath("/");
+    revalidatePath("/blog");
     revalidatePath(body.path);
     const message = `Updated route: ${body.path}`;
     return NextResponse.json({ body, message });
