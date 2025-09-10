@@ -103,7 +103,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         className="rounded-lg mx-auto w-full"
       />
 
-      <div className="prose prose-[#858585] prose-h1:text-[#858585] pb-12">
+      <div className="prose prose-[#858585] prose-h1:text-[#858585] pb-12 mx-auto">
         <PortableText value={data.body} components={components} />
       </div>
     </div>
