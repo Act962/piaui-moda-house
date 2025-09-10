@@ -2,6 +2,7 @@ import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import { BasicBlogPost } from "@/sanity/lib/interface";
 import { PortableText } from "next-sanity";
+import { getImageDimensions } from "@sanity/asset-utils";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -28,6 +29,24 @@ type BlogPostPageProps = {
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params;
   const data: BasicBlogPost = await getData(slug);
+  const ImageComponent = ({ value, isInline }: any) => {
+    const { width, height } = getImageDimensions(value);
+    return (
+      <Image
+        src={urlFor(value).url()}
+        alt={value.alt || ""}
+        loading="lazy"
+        width={width}
+        height={height}
+      />
+    );
+  };
+
+  const components = {
+    types: {
+      image: ImageComponent,
+    },
+  };
 
   return (
     <div className="mt-28 space-y-8 w-full max-w-6xl mx-auto px-8">
@@ -57,7 +76,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       />
 
       <div className="prose prose-[#858585] prose-h1:text-[#858585] pb-12">
-        <PortableText value={data.body} />
+        <PortableText value={data.body} components={components} />
       </div>
     </div>
   );

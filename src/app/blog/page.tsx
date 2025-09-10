@@ -37,12 +37,13 @@ export default async function BlogPage() {
               key={`${post.currentSlug}-${index}`}
               className="group flex flex-col items-start"
             >
-              <div className="relative h-60 md:h-60 w-full overflow-hidden rounded-xl">
+              <div className="relative h-60 md:h-60 size-full overflow-hidden rounded-xl">
                 <Image
                   src={urlFor(post.mainImage).url()}
                   alt={post.mainImage.alt}
-                  fill
-                  className="bg-cover bg-center bg-no-repeat rounded-xl group-hover:scale-110 transition-transform duration-300"
+                  width={800}
+                  height={800}
+                  className="bg-cover size-full bg-center bg-no-repeat rounded-xl group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
               <h4 className=" font-bold mt-2 line-clamp-3 opacity-85 group-hover:opacity-100">
