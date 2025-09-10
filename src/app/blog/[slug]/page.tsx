@@ -13,7 +13,8 @@ async function getData(slug: string) {
   'currentSlug': slug.current,
     title,
     body,
-    mainImage
+    mainImage,
+    publishedAt
 }[0]
     `;
 
@@ -94,13 +95,19 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {data.title}
       </h1>
 
+      <span className="text-sm text-gray-400">
+        {new Intl.DateTimeFormat("pt-BR", {
+          dateStyle: "medium",
+        }).format(new Date(data.publishedAt))}
+      </span>
+
       <Image
         src={urlFor(data.mainImage).url()}
         alt=""
         width={800}
         height={800}
         priority
-        className="rounded-lg mx-auto w-full"
+        className="rounded-lg mx-auto w-full mt-8"
       />
 
       <div className="prose prose-[#858585] prose-h1:text-[#858585] pb-12 mx-auto">
