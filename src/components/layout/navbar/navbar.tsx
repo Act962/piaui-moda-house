@@ -69,7 +69,12 @@ export function Navbar({ ignore }: Props) {
         </Link>
 
         <div className="flex items-center gap-10">
-          {/* Redes socias */}
+          <Link
+            href="/blog"
+            className="uppercase text-sm sm:text-base hover:underline transition-all duration-300"
+          >
+            Blog
+          </Link>
           <div className="hidden sm:flex gap-4">
             {socialMedias.map((socialMedia) => (
               <Link

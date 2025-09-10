@@ -1,5 +1,6 @@
 import {
   AboutSection,
+  BlogSection,
   FaqSection,
   FormSection,
   HeroSection,
@@ -20,7 +21,7 @@ export function HomePage() {
       <TimelineSection />
       <FaqSection />
       <FormSection />
-      {/* <BlogSection /> */}
+      <BlogSection />
     </>
   );
 }

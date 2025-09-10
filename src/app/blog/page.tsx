@@ -3,7 +3,6 @@ import { urlFor } from "@/sanity/lib/image";
 import { BasicBlogPost } from "@/sanity/lib/interface";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 async function getData() {
   const query = `
@@ -21,14 +20,16 @@ async function getData() {
   return data;
 }
 
-export async function BlogSection() {
+export default async function BlogPage() {
   const data: BasicBlogPost[] = await getData();
 
   return (
-    <section className="py-24 text-center">
-      <div className="w-full max-w-6xl mx-auto space-y-12 px-8">
-        <h2 className="font-medium tracking-widest text-xl uppercase">Blog</h2>
+    <div className="min-h-screen flex flex-col items-center">
+      <section className="w-full pt-36 pb-32 bg-gradient-to-tr from-[#E97F40] via-[#E66A31] to-[#E14918] text-white text-center">
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-widest">Blog</h1>
+      </section>
 
+      <div className="mt-20 sm:mt-28 pb-28 w-full max-w-6xl mx-auto px-8">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {data.map((post, index) => (
             <Link
@@ -56,6 +57,6 @@ export async function BlogSection() {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }
