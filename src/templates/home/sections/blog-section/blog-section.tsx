@@ -27,9 +27,13 @@ export async function BlogSection() {
   return (
     <section className="py-24 text-center">
       <div className="w-full max-w-6xl mx-auto space-y-12 px-8">
-        <h2 className="font-medium tracking-widest text-xl uppercase">Blog</h2>
+        <Link href="/blog" className="block" prefetch>
+          <h2 className="font-medium tracking-widest text-xl uppercase">
+            Blog
+          </h2>
+        </Link>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {data.map((post, index) => (
             <Link
               href={`/blog/${post.currentSlug}`}
@@ -49,7 +53,7 @@ export async function BlogSection() {
               </h4>
               <span className="text-sm mt-1">
                 {new Intl.DateTimeFormat("pt-BR", {
-                  dateStyle: "medium",
+                  dateStyle: "short",
                 }).format(new Date(post.publishedAt))}
               </span>
             </Link>

@@ -49,7 +49,6 @@ async function getData() {
 
 export default async function BlogPage() {
   const data: BasicBlogPost[] = await getData();
-  console.log(data);
 
   return (
     <div className="min-h-screen flex flex-col items-center">
@@ -58,7 +57,7 @@ export default async function BlogPage() {
       </section>
 
       <div className="mt-20 sm:mt-28 pb-28 w-full max-w-6xl mx-auto px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {data.map((post, index) => (
             <Link
               href={`/blog/${post.currentSlug}`}
