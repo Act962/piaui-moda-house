@@ -16,21 +16,12 @@ const schedules = [
     location: "São Paulo - SP",
     description: "Talk Show Fashion Meeting.",
   },
-  {
-    date: "01 de novembro",
-    location: "Piauí - PI",
-    description: "Desfile Conceito",
-  },
-  {
-    date: "02 de novembro",
-    location: "Piauí - PI",
-    description:
-      "CCT Sebrae Moda + PMH Business\n\nPROGRAMAÇÃO\n•	Almoço de Networking – Negócios de Moda\n•	Desfiles\n•	Palestras com nomes nacionais\n•	Talk PMH – com Raquel Dias e grandes nomes da moda piauiense\n•	Encerramento com atração musical no Grande Hall",
-  },
+
   {
     date: "03 de novembro",
     location: "Piauí - PI",
-    description: "PMH BUSINESS/ CCT",
+    description:
+      "CCT Sebrae Moda + PMH Business\n\nPROGRAMAÇÃO\n•	Almoço de Networking – Negócios de Moda\n•	Desfiles\n•	Palestras com nomes nacionais\n•	Talk PMH – com Raquel Dias e grandes nomes da moda piauiense\n•	Encerramento com atração musical no Grande Hall",
   },
   {
     date: "04 de novembro",
