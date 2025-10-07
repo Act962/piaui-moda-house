@@ -8,7 +8,7 @@ export function Hero() {
     <section className=" min-h-screen grid grid-cols-1 sm:grid-cols-2 ">
       {/* Left side */}
       <div className="relative flex flex-col justify-center items-center px-6 ">
-        <div className="w-full sm:max-w-[300px]">
+        <div className="w-full sm:max-w-[300px] flex flex-col justify-center items-center sm:items-start">
           <Image
             src="/logo-made-in-piaui.png"
             alt="Logo PM"
@@ -17,7 +17,7 @@ export function Hero() {
             className="object-contain w-[180px] sm:w-[210px]"
           />
 
-          <h1 className="text-3xl font-bold mt-8">
+          <h1 className="text-3xl font-bold mt-8 text-center sm:text-left">
             Adquira produtos <br />
             autênticos do Piauí <br />e valorize a{" "}
             <span className="underline">
