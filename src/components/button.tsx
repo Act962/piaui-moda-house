@@ -1,15 +1,18 @@
 import { tv, VariantProps } from "tailwind-variants";
 
 export const buttonVariants = tv({
-  base: "flex items-center justify-center cursor-pointer transition-colors group gap-1 bg-black text-white hover:bg-black/90",
+  base: "flex items-center justify-center cursor-pointer transition-all group gap-1 bg-black text-white hover:bg-black/90",
   variants: {
     variant: {
       primary: " rounded-md",
       secondary: "rounded-full",
+      gradient:
+        "rounded-full bg-gradient-to-r from-[#FE7F23]  to-[#FF4900] hover:opacity-80",
     },
     size: {
       sm: "h-7 py-1 px-3",
       md: "h-10 py-2 px-8",
+      lg: "h-12 py-2 px-14",
     },
     disabled: {
       true: "opacity-50 pointer-events-none",
@@ -27,10 +30,12 @@ export const buttonTextVariants = tv({
     variant: {
       primary: "",
       secondary: "",
+      gradient: "",
     },
     size: {
       sm: "text-sm",
       md: "text-xs tracking-widest",
+      lg: "text-lg font-bold",
     },
   },
   defaultVariants: {

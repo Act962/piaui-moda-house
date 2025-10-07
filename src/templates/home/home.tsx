@@ -4,6 +4,7 @@ import {
   FaqSection,
   FormSection,
   HeroSection,
+  MadeSection,
   OtherSection,
   PartnerSection,
   ScheduleSection,
@@ -18,6 +19,7 @@ export function HomePage() {
       <ScheduleSection />
       <OtherSection />
       <PartnerSection />
+      <MadeSection />
       <TimelineSection />
       <FaqSection />
       <FormSection />

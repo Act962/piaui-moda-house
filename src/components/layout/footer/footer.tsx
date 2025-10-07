@@ -37,7 +37,7 @@ const links = [
 
 export function Footer() {
   return (
-    <footer className="bg-black text-white px-4 md:px-8 py-18">
+    <footer className="bg-black text-white px-4 md:px-8 py-18 z-10">
       <div className="flex items-center justify-between">
         <Link href="/">
           <Image
