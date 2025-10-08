@@ -16,7 +16,7 @@ export function HomePage() {
     <>
       <HeroSection />
       <AboutSection />
-      <ScheduleSection />
+      {/* <ScheduleSection /> */}
       <OtherSection />
       <PartnerSection />
       <MadeSection />
