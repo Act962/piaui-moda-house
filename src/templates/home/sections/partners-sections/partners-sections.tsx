@@ -11,15 +11,16 @@ export const partners = [
     logo: "/setur.png",
     name: "Setur",
   },
-  // {
-  //   logo: "/sebrae.png",
-  //   name: "Sebrae",
-  // },
-  // {
-  //   logo: "/sebrae-moda.png",
-  //   name: "Sebrae Moda",
-  // },
 ];
+
+// {
+//   logo: "/sebrae.png",
+//   name: "Sebrae",
+// },
+// {
+//   logo: "/sebrae-moda.png",
+//   name: "Sebrae Moda",
+// },
 
 export const apoio = [
   {
