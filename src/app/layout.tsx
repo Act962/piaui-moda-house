@@ -5,6 +5,7 @@ import "./globals.css";
 
 import { Toaster } from "sonner";
 import { CookieBanner } from "@/components/cookie-banner";
+import { Providers } from "./providers";
 
 const acuminPro = localFont({
   variable: "--font-acumin-sans",
@@ -86,9 +87,11 @@ export default function RootLayout({
       <body
         className={`${acuminPro.variable} ${acuminPro.className} antialiased relative`}
       >
-        <Toaster position="bottom-right" />
-        {children}
-        <CookieBanner />
+        <Providers>
+          <Toaster position="bottom-right" />
+          {children}
+          <CookieBanner />
+        </Providers>
       </body>
     </html>
   );
