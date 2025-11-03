@@ -36,7 +36,7 @@ export function FormSection() {
           name: data.name,
           email: data.email,
           contato: data.phone,
-          companyId: "1751460300190x769512916860534800",
+          companyId: "1716245972374x830198274999121300",
           tagId: "",
         }),
       });
@@ -50,7 +50,7 @@ export function FormSection() {
   }
 
   return (
-    <section className="px-6 pt-12 pb-24 text-center">
+    <section id="inscricoes" className="px-6 pt-12 pb-24 text-center">
       <h2 className="font-medium tracking-widest text-xl uppercase">
         Fique por dentro
       </h2>

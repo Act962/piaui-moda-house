@@ -23,7 +23,7 @@ export function HomePage() {
       <TimelineSection />
       <FaqSection />
       <FormSection />
-      <BlogSection />
+      {/* <BlogSection /> */}
     </>
   );
 }

@@ -75,6 +75,12 @@ export function Navbar({ ignore }: Props) {
           >
             Blog
           </Link>
+          <Link
+            href="#inscricoes"
+            className="uppercase text-sm sm:text-base hover:underline transition-all duration-300"
+          >
+            INSCREVA-SE
+          </Link>
           <div className="hidden sm:flex gap-4">
             {socialMedias.map((socialMedia) => (
               <Link
