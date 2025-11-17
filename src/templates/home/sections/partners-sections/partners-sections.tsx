@@ -4,6 +4,14 @@ import Link from "next/link";
 
 export const partners = [
   {
+    logo: "/senac.png",
+    name: "Senac",
+  },
+  {
+    logo: "/polo-piaui-center.png",
+    name: "Polo Piauí Center",
+  },
+  {
     logo: "/piaui.png",
     name: "Governo do Piauí",
   },
@@ -31,6 +39,10 @@ export const apoio = [
     logo: "/fashionmeeting.png",
     name: "Fashion Meeting",
   },
+  {
+    logo: "/logo-dom.png",
+    name: "Dom Concept",
+  },
 ];
 
 export function PartnerSection() {
@@ -49,7 +61,7 @@ export function PartnerSection() {
                 alt={partner.name}
                 width={140}
                 height={140}
-                className=" w-[140px]"
+                className=" w-[100px]"
               />
             </div>
           ))}
@@ -69,7 +81,7 @@ export function PartnerSection() {
                 alt={partner.name}
                 width={140}
                 height={140}
-                className="object-cover"
+                className="object-cover w-[100px]"
               />
             </div>
           ))}
